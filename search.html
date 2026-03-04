@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2D3E64" />
+  <meta name="description" content="Search Premium Tax Accounting. Find pages about tax planning, CFO services, BOI reporting, bookkeeping, contact, and more." />
+  <title>Search | Premium Tax Accounting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Premium Tax Accounting home">
+        <img src="assets/img/pta-logo.png" alt="Premium Tax Accounting" class="logo-img" />
+        <span class="logo-text logo-text-fallback">Premium Tax Accounting</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-controls="servicesMenu">Services</button>
+            <ul class="nav-dropdown-menu" id="servicesMenu">
+              <li><a href="services.html#tax-planning">Tax Planning & Advisory</a></li>
+              <li><a href="services.html#cfo">CFO Services</a></li>
+              <li><a href="services.html#boi">BOI Reporting</a></li>
+              <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-actions-mobile">
+            <a href="sign-in.html" class="btn btn-signin">Sign In</a>
+            <a href="contact.html#book" class="btn btn-primary">Book an Appointment</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <button type="button" class="search-toggle" id="searchToggle" aria-label="Open search" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <form class="search-form is-open" id="searchForm" action="search.html" method="get" role="search">
+          <input type="search" name="q" class="search-input" id="searchInput" placeholder="Search..." autocomplete="off" aria-label="Search site" value="" />
+          <button type="submit" class="search-submit" aria-label="Submit search">Search</button>
+        </form>
+      </div>
+      <div class="header-actions">
+        <a href="account.html" class="btn btn-primary btn-header" id="headerAccount" style="display: none;">My Account</a>
+        <a href="sign-in.html" class="btn btn-signin" id="headerSignIn">Sign In</a>
+        <a href="contact.html#book" class="btn btn-primary btn-header">Book an Appointment</a>
+      </div>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="search-page">
+    <div class="container">
+      <h1 class="search-page-title">Search</h1>
+      <form class="search-page-form" action="search.html" method="get" role="search">
+        <label for="searchPageInput" class="visually-hidden">Search the site</label>
+        <input type="search" id="searchPageInput" name="q" class="search-page-input" placeholder="Search for tax, BOI, contact, services..." />
+        <button type="submit" class="btn btn-primary search-page-submit">Search</button>
+      </form>
+      <div id="searchResults" class="search-results" aria-live="polite">
+        <p id="searchResultsStatus" class="search-results-status">Enter a search term above and click Search.</p>
+        <ul id="searchResultsList" class="search-results-list" hidden></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/pta-logo.png" alt="Premium Tax Accounting" class="footer-logo" />
+        <p class="footer-tagline">Giving you the complete solutions to simplify your business and flourish it.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#book">Book an Appointment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copyright">© <span id="footerYear"></span> Premium Tax Accounting. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script>document.getElementById('footerYear') && (document.getElementById('footerYear').textContent = new Date().getFullYear());</script>
+</body>
+</html>

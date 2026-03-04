@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2D3E64" />
+  <meta name="description" content="Premium Tax Accounting - Professional tax accounting services in Northfield, IL. Tax planning, CFO services, BOI reporting, bookkeeping." />
+  <title>Premium Tax Accounting | Professional Tax & Accounting Services | Northfield, IL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header (hero style on home: transparent, white nav, dropdown carets) -->
+  <header class="site-header header-hero" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Premium Tax Accounting home">
+        <img src="assets/img/pta-logo.png" alt="Premium Tax Accounting" class="logo-img" />
+        <span class="logo-text logo-text-fallback">Premium Tax Accounting</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-controls="servicesMenu">Services <span class="nav-caret" aria-hidden="true"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1l4 4 4-4"/></svg></span></button>
+            <ul class="nav-dropdown-menu" id="servicesMenu">
+              <li><a href="services.html#tax-planning">Tax Planning & Advisory</a></li>
+              <li><a href="services.html#cfo">CFO Services</a></li>
+              <li><a href="services.html#boi">BOI Reporting</a></li>
+              <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-actions-mobile">
+            <a href="sign-in.html" class="btn btn-signin">Sign In</a>
+            <a href="contact.html#book" class="btn btn-primary">Book an Appointment</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <button type="button" class="search-toggle" id="searchToggle" aria-label="Open search" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <form class="search-form" id="searchForm" action="search.html" method="get" role="search">
+          <input type="search" name="q" class="search-input" id="searchInput" placeholder="Search..." autocomplete="off" aria-label="Search site" />
+          <button type="submit" class="search-submit" aria-label="Submit search">Search</button>
+        </form>
+      </div>
+      <div class="header-actions">
+        <a href="account.html" class="btn btn-primary btn-header" id="headerAccount" style="display: none;">My Account</a>
+        <a href="sign-in.html" class="btn btn-signin" id="headerSignIn">Sign In</a>
+        <a href="contact.html#book" class="btn btn-primary btn-header btn-hero-cta">Get Started</a>
+      </div>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero – dark blue bg, pattern, image + floating cards left, content right -->
+    <section class="hero hero-dark" id="home">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-row hero-row-split">
+          <div class="hero-visual">
+            <div class="hero-visual-img-wrap hero-anim-img">
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=90" alt="Professional tax and accounting services" />
+            </div>
+            <div class="hero-float-card hero-float-card-1 hero-anim-card-1">
+              <span class="hero-float-card-label">Total Revenue</span>
+              <div class="hero-float-card-main">
+                <span class="hero-float-card-value">$8,560</span>
+                <div class="hero-float-card-chart">
+                  <svg viewBox="0 0 56 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="hero-chart-svg">
+                    <path class="hero-chart-line" d="M0 18 L10 14 L20 16 L28 10 L36 8 L44 6 L56 4" stroke="url(#heroChartGreen)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs><linearGradient id="heroChartGreen" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22c55e"/><stop offset="1" stop-color="#4ade80"/></linearGradient></defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="hero-float-card hero-float-card-2 hero-anim-card-2">
+              <span class="hero-float-card-label">Happy Clients</span>
+              <div class="hero-float-card-main">
+                <span class="hero-float-card-value">1,345+</span>
+                <div class="hero-float-card-rating-wrap">
+                  <span class="hero-float-card-rating">4.9/5</span>
+                  <span class="hero-float-card-stars" aria-hidden="true">
+                    <span class="hero-star hero-star-full" aria-hidden="true"></span>
+                    <span class="hero-star hero-star-full" aria-hidden="true"></span>
+                    <span class="hero-star hero-star-full" aria-hidden="true"></span>
+                    <span class="hero-star hero-star-full" aria-hidden="true"></span>
+                    <span class="hero-star hero-star-light" aria-hidden="true"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-content hero-anim-content">
+            <h1 class="hero-title">Smart, Reliable Accounting for Your Peace of Mind</h1>
+            <p class="hero-lead">From tax prep to day-to-day bookkeeping, we help small businesses stay compliant and financially healthy.</p>
+            <div class="hero-cta">
+              <a href="contact.html#book" class="btn btn-primary">Get Started</a>
+              <a href="services.html" class="btn btn-hero-outline">Our Services</a>
+            </div>
+            <div class="hero-social-proof hero-anim-proof">
+              <div class="hero-avatars">
+                <span class="hero-avatar" style="background-image: url(https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face);"></span>
+                <span class="hero-avatar" style="background-image: url(https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=face);"></span>
+                <span class="hero-avatar" style="background-image: url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face);"></span>
+                <span class="hero-avatar" style="background-image: url(https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face);"></span>
+              </div>
+              <div class="hero-trust">
+                <span class="hero-trust-stars" aria-hidden="true">
+                  <span class="hero-star" aria-hidden="true"></span>
+                  <span class="hero-star" aria-hidden="true"></span>
+                  <span class="hero-star" aria-hidden="true"></span>
+                  <span class="hero-star" aria-hidden="true"></span>
+                  <span class="hero-star" aria-hidden="true"></span>
+                </span>
+                <span class="hero-trust-text">Trusted by 2K+ Customers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOI CTA strip -->
+    <section class="boi-strip">
+      <div class="container boi-strip-inner">
+        <div class="boi-strip-content animate-in">
+          <h2 class="boi-strip-title">Beneficial Owner Information (BOI / FINCEN)</h2>
+          <p class="boi-strip-text">We can help you avoid serious penalties, including fines of over $500/day. We can help you determine your deadline and file for you.</p>
+          <div class="boi-strip-actions">
+            <a href="contact.html#book" class="btn btn-accent">File My Report Now</a>
+            <a href="services.html#boi" class="btn btn-ghost-light">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we help + image block -->
+    <section class="section section-help" id="about">
+      <div class="container">
+        <div class="split-block">
+          <div class="split-block-img animate-in">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80" alt="Team collaboration and financial planning" />
+          </div>
+          <div class="split-block-content">
+            <p class="section-label animate-in" style="text-align: left;">About Us</p>
+            <h2 class="section-title animate-in" style="text-align: left; margin-bottom: 16px;">How Can We Help You?</h2>
+            <p class="animate-in">At Premium Tax Accounting, we offer a comprehensive suite of accounting and tax services designed to empower your financial success. Our firm is dedicated to delivering personalized solutions tailored to meet the unique needs of each client—whether you're an individual, a small business, or a large corporation.</p>
+            <p class="animate-in">We understand that every client is different, which is why we take the time to listen, understand your goals, and tailor our services to meet your specific needs.</p>
+            <div class="section-cta animate-in" style="margin-top: 24px;">
+              <a href="contact.html#book" class="btn btn-primary">Book Your Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-services section-alt" id="services">
+      <div class="container">
+        <p class="section-label animate-in">What We Offer</p>
+        <h2 class="section-title animate-in">Our Services</h2>
+        <div class="services-grid">
+          <article class="service-card animate-in">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4v40M4 24h40"/><circle cx="24" cy="24" r="16"/></svg>
+            </div>
+            <h3 class="service-title">Tax Planning & Advisory</h3>
+            <p class="service-desc">Our team is here to assist you with tax planning, preparation, and compliance, ensuring that you meet your obligations while maximizing your tax efficiency.</p>
+            <a href="services.html#tax-planning" class="service-link">Read More</a>
+          </article>
+          <article class="service-card animate-in">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h32v24H8z"/><path d="M16 20h16M16 28h12"/></svg>
+            </div>
+            <h3 class="service-title">CFO Services</h3>
+            <p class="service-desc">Strategic financial leadership and oversight tailored to your business. We help you make informed decisions and scale with confidence.</p>
+            <a href="services.html#cfo" class="service-link">Read More</a>
+          </article>
+          <article class="service-card animate-in">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8h24v32H12z"/><path d="M20 16h8M20 24h8M20 32h4"/></svg>
+            </div>
+            <h3 class="service-title">BOI Reporting</h3>
+            <p class="service-desc">Ensure compliance and transparency with our beneficial ownership information reporting services. Stay ahead of regulatory requirements effortlessly.</p>
+            <a href="services.html#boi" class="service-link">Read More</a>
+          </article>
+          <article class="service-card animate-in">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 16h32M8 24h32M8 32h24"/><path d="M4 8h40v32H4z"/></svg>
+            </div>
+            <h3 class="service-title">Bookkeeping</h3>
+            <p class="service-desc">Efficient payroll and corporation setup tailored to your needs. Let us handle the paperwork while you focus on growing your business.</p>
+            <a href="services.html#bookkeeping" class="service-link">Read More</a>
+          </article>
+        </div>
+        <div class="section-cta animate-in">
+          <a href="services.html" class="btn btn-outline">View All</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOI CTA block -->
+    <section class="section section-boi">
+      <div class="container">
+        <div class="boi-block animate-in">
+          <h2 class="boi-block-title">File your Beneficial Ownership Information Report to Comply with the Corporate Transparency Act</h2>
+          <p class="boi-block-text">Avoid penalties, including imprisonment for up to two years and/or fines up to $10,000, and civil fines of over $500/day. File your Beneficial Ownership report today.</p>
+          <a href="contact.html#book" class="btn btn-primary btn-lg">Get Started Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section-process section-silver">
+      <div class="container">
+        <p class="section-label animate-in">How It Works</p>
+        <h2 class="section-title animate-in">Our Process</h2>
+        <p class="section-lead animate-in">Bringing aboard an accounting professional guarantees precision, time-saving, maximized deductions, audit assistance, and future planning. At Premium Tax Accounting, initiating this process is very simple.</p>
+        <div class="process-steps">
+          <div class="process-step animate-in">
+            <span class="process-num">01</span>
+            <h3 class="process-title">Make an Appointment</h3>
+            <p class="process-desc">You have the option to either arrange a meeting in person or have a phone/zoom discussion. Just visit our Calendly page to book an appointment with one of our experts.</p>
+          </div>
+          <div class="process-step animate-in">
+            <span class="process-num">02</span>
+            <h3 class="process-title">Consultation with the Team</h3>
+            <p class="process-desc">Engage in a conversation about your goals and expectations to tailor a plan that meets your requirements.</p>
+          </div>
+          <div class="process-step animate-in">
+            <span class="process-num">03</span>
+            <h3 class="process-title">Seal the Deal</h3>
+            <p class="process-desc">From this point forward, we will begin the onboarding process and securely connect your financials and accounts with our portal.</p>
+          </div>
+        </div>
+        <div class="section-cta animate-in">
+          <a href="contact.html#book" class="btn btn-primary">Get Started Now!</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beyond ordinary -->
+    <section class="section section-ordinary">
+      <div class="container ordinary-inner">
+        <div class="ordinary-content animate-in">
+          <h2 class="ordinary-title">Beyond Ordinary Tax Solutions</h2>
+          <p class="ordinary-text">Helping you with tax advantageous strategies to keep more of what you've earned.</p>
+          <a href="contact.html#book" class="btn btn-primary btn-lg">Connect with Our Expert</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section section-industries section-alt">
+      <div class="container">
+        <p class="section-label animate-in">Expertise</p>
+        <h2 class="section-title animate-in">Industries We Serve</h2>
+        <p class="section-lead animate-in">We deliver tailored tax and accounting solutions across a wide range of sectors.</p>
+        <div class="industries-grid">
+          <article class="industry-block animate-in">
+            <div class="industry-block-img">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Insurance" />
+              <span class="industry-block-overlay"></span>
+            </div>
+            <div class="industry-block-content">
+              <h3 class="industry-block-title">Insurance</h3>
+              <p class="industry-block-desc">Tax planning and compliance for agencies and carriers. We help you navigate regulatory requirements and optimize financial reporting.</p>
+            </div>
+          </article>
+          <article class="industry-block animate-in">
+            <div class="industry-block-img">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" alt="Healthcare" />
+              <span class="industry-block-overlay"></span>
+            </div>
+            <div class="industry-block-content">
+              <h3 class="industry-block-title">Healthcare</h3>
+              <p class="industry-block-desc">Specialized support for practices, clinics, and healthcare organizations. From payroll to year-end tax strategy.</p>
+            </div>
+          </article>
+          <article class="industry-block animate-in">
+            <div class="industry-block-img">
+              <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80" alt="Not for Profit" />
+              <span class="industry-block-overlay"></span>
+            </div>
+            <div class="industry-block-content">
+              <h3 class="industry-block-title">Not for Profit</h3>
+              <p class="industry-block-desc">Fund accounting, grant compliance, and Form 990 preparation so you can focus on your mission.</p>
+            </div>
+          </article>
+          <article class="industry-block animate-in">
+            <div class="industry-block-img">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Real Estate" />
+              <span class="industry-block-overlay"></span>
+            </div>
+            <div class="industry-block-content">
+              <h3 class="industry-block-title">Real Estate</h3>
+              <p class="industry-block-desc">Entity structuring, cost segregation, and tax strategy for investors, developers, and property managers.</p>
+            </div>
+          </article>
+          <article class="industry-block animate-in">
+            <div class="industry-block-img">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Distributors & Wholesalers" />
+              <span class="industry-block-overlay"></span>
+            </div>
+            <div class="industry-block-content">
+              <h3 class="industry-block-title">Distributors & Wholesalers</h3>
+              <p class="industry-block-desc">Inventory, COGS, and multi-entity accounting. We keep your books audit-ready and tax-efficient.</p>
+            </div>
+          </article>
+          <article class="industry-block animate-in">
+            <div class="industry-block-img">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Food & Beverage" />
+              <span class="industry-block-overlay"></span>
+            </div>
+            <div class="industry-block-content">
+              <h3 class="industry-block-title">Food & Beverage</h3>
+              <p class="industry-block-desc">Restaurant and F&B business accounting—payroll, sales tax, and profit optimization.</p>
+            </div>
+          </article>
+          <article class="industry-block animate-in">
+            <div class="industry-block-img">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Construction" />
+              <span class="industry-block-overlay"></span>
+            </div>
+            <div class="industry-block-content">
+              <h3 class="industry-block-title">Construction</h3>
+              <p class="industry-block-desc">Job costing, progress billing, and contractor tax planning. Built for subcontractors and general contractors.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials slider -->
+    <section class="section section-testimonials section-silver" id="testimonials">
+      <div class="container">
+        <p class="section-label animate-in">Testimonials</p>
+        <h2 class="section-title animate-in">What Our Clients Say</h2>
+        <p class="section-lead animate-in">Trusted by businesses and individuals across industries.</p>
+        <div class="testimonials-slider-wrap animate-in">
+          <div class="testimonials-slider">
+            <button type="button" class="testimonial-btn testimonial-btn-prev" id="testimonialPrev" aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="testimonial-btn testimonial-btn-next" id="testimonialNext" aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <div class="testimonials-viewport">
+              <div class="testimonials-track" id="testimonialsTrack">
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">Premium Tax Accounting made our tax season stress-free. Professional and responsive.</blockquote>
+                  <p class="testimonial-name">Zoheb Nasir</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">We rely on them for bookkeeping and tax planning. Highly recommend.</blockquote>
+                  <p class="testimonial-name">Derma Bliss</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">Clear advice and on-time filing. Exactly what our business needed.</blockquote>
+                  <p class="testimonial-name">Danial Jabbar</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">Outstanding service. They helped us with BOI reporting and saved us from penalties.</blockquote>
+                  <p class="testimonial-name">Shehzad Majid</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">Knowledgeable team and great communication. Will continue to work with them.</blockquote>
+                  <p class="testimonial-name">Ahsan Mumtaz</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">Professional, efficient, and they truly care about their clients' success.</blockquote>
+                  <p class="testimonial-name">M Hussaini</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">From tax prep to CFO-level guidance—they deliver. Very pleased.</blockquote>
+                  <p class="testimonial-name">Almas Ghaziani</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+                <div class="testimonial-slide">
+                  <blockquote class="testimonial-quote">Top-notch accounting support. They simplified our finances and gave us peace of mind.</blockquote>
+                  <p class="testimonial-name">Muhammad Shoaib</p>
+                  <p class="testimonial-role">Client</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-dots" id="testimonialsDots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Book -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <p class="section-label animate-in">Contact</p>
+        <h2 class="section-title animate-in">Get In Touch</h2>
+        <p class="section-lead animate-in">Give us a call or drop by anytime. We endeavour to answer all enquiries within 24 hours on business days.</p>
+        <div class="contact-grid">
+          <div class="contact-card animate-in">
+            <h3>Find us</h3>
+            <p>1780 Maple St., Suite # 17<br />Northfield, IL 60093</p>
+          </div>
+          <div class="contact-card animate-in">
+            <h3>Email us</h3>
+            <p><a href="mailto:info@premiumtaxaccounting.com">info@premiumtaxaccounting.com</a></p>
+          </div>
+          <div class="contact-card animate-in">
+            <h3>Phone</h3>
+            <p><a href="tel:+18475799625">+1-847-579-9625</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book CTA -->
+    <section class="section section-book" id="book">
+      <div class="container">
+        <div class="book-cta animate-in">
+          <h2 class="book-cta-title">Ready to get started?</h2>
+          <p class="book-cta-text">Book an appointment with one of our experts and take the first step toward your financial success.</p>
+          <a href="contact.html#book" class="btn btn-primary btn-lg">Book an Appointment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/pta-logo.png" alt="Premium Tax Accounting" class="footer-logo" />
+        <p class="footer-tagline">Giving you the complete solutions to simplify your business and flourish it.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Tax Planning & Advisory</a></li>
+          <li><a href="services.html">CFO Services</a></li>
+          <li><a href="services.html">BOI Reporting</a></li>
+          <li><a href="services.html">Bookkeeping</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#book">Book an Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p><strong>Phone:</strong> <a href="tel:+18475799625">+1-847-579-9625</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@premiumtaxaccounting.com">info@premiumtaxaccounting.com</a></p>
+        <p><strong>Office:</strong> 1780 Maple St., Suite # 17, Northfield, IL 60093</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copyright">© <span id="footerYear"></span> Premium Tax Accounting. All Rights Reserved.</p>
+        <p class="footer-legal"><a href="#">Privacy Policy</a> · <a href="#">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('footerYear') && (document.getElementById('footerYear').textContent = new Date().getFullYear());</script>
+</body>
+</html>

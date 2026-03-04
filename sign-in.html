@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2D3E64" />
+  <meta name="description" content="Sign in to Premium Tax Accounting client portal." />
+  <title>Sign In | Premium Tax Accounting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Premium Tax Accounting home">
+        <img src="assets/img/pta-logo.png" alt="Premium Tax Accounting" class="logo-img" />
+        <span class="logo-text logo-text-fallback">Premium Tax Accounting</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-controls="servicesMenu">Services</button>
+            <ul class="nav-dropdown-menu" id="servicesMenu">
+              <li><a href="services.html#tax-planning">Tax Planning & Advisory</a></li>
+              <li><a href="services.html#cfo">CFO Services</a></li>
+              <li><a href="services.html#boi">BOI Reporting</a></li>
+              <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-actions-mobile">
+            <a href="sign-in.html" class="btn btn-signin">Sign In</a>
+            <a href="contact.html#book" class="btn btn-primary">Book an Appointment</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <button type="button" class="search-toggle" id="searchToggle" aria-label="Open search" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <form class="search-form" id="searchForm" action="search.html" method="get" role="search">
+          <input type="search" name="q" class="search-input" id="searchInput" placeholder="Search..." autocomplete="off" aria-label="Search site" />
+          <button type="submit" class="search-submit" aria-label="Submit search">Search</button>
+        </form>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-primary btn-header" id="headerAccount" style="display: none;">My Account</a>
+        <a href="sign-in.html" class="btn btn-signin" id="headerSignIn">Sign In</a>
+        <a href="contact.html#book" class="btn btn-primary btn-header">Book an Appointment</a>
+      </div>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <h1>Sign In</h1>
+      <p class="auth-subtitle">Access your Premium Tax Accounting account</p>
+      <div class="auth-error" id="authError" role="alert"></div>
+      <form class="auth-form" id="signInForm" novalidate>
+        <div class="form-group">
+          <label for="signInEmail">Email</label>
+          <input type="email" id="signInEmail" name="email" required placeholder="you@example.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="signInPassword">Password</label>
+          <input type="password" id="signInPassword" name="password" required placeholder="••••••••" autocomplete="current-password" minlength="6" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit" id="signInSubmit">Sign In</button>
+      </form>
+
+      <p class="auth-divider"><span>Or continue with</span></p>
+      <div class="auth-social">
+        <button type="button" class="btn btn-social btn-google" id="signInGoogle" aria-label="Sign in with Google">
+          <svg class="btn-social-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Google
+        </button>
+        <button type="button" class="btn btn-social btn-facebook" id="signInFacebook" aria-label="Sign in with Facebook">
+          <svg class="btn-social-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </button>
+        <button type="button" class="btn btn-social btn-apple" id="signInApple" aria-label="Sign in with Apple">
+          <svg class="btn-social-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          Apple
+        </button>
+      </div>
+
+      <p class="auth-footer">
+        Don't have an account? <a href="contact.html">Contact us</a> to get started.
+      </p>
+    </div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+  <script src="assets/js/firebase-config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

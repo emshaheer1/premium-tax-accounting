@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2D3E64" />
+  <meta name="description" content="Contact Premium Tax Accounting. Northfield, IL. Phone, email, address. Book an appointment." />
+  <title>Contact | Premium Tax Accounting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Premium Tax Accounting home">
+        <img src="assets/img/pta-logo.png" alt="Premium Tax Accounting" class="logo-img" />
+        <span class="logo-text logo-text-fallback">Premium Tax Accounting</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-controls="servicesMenu">Services</button>
+            <ul class="nav-dropdown-menu" id="servicesMenu">
+              <li><a href="services.html#tax-planning">Tax Planning & Advisory</a></li>
+              <li><a href="services.html#cfo">CFO Services</a></li>
+              <li><a href="services.html#boi">BOI Reporting</a></li>
+              <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li class="nav-actions-mobile">
+            <a href="sign-in.html" class="btn btn-signin">Sign In</a>
+            <a href="contact.html#book" class="btn btn-primary">Book an Appointment</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <button type="button" class="search-toggle" id="searchToggle" aria-label="Open search" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <form class="search-form" id="searchForm" action="search.html" method="get" role="search">
+          <input type="search" name="q" class="search-input" id="searchInput" placeholder="Search..." autocomplete="off" aria-label="Search site" />
+          <button type="submit" class="search-submit" aria-label="Submit search">Search</button>
+        </form>
+      </div>
+      <div class="header-actions">
+        <a href="account.html" class="btn btn-primary btn-header" id="headerAccount" style="display: none;">My Account</a>
+        <a href="sign-in.html" class="btn btn-signin" id="headerSignIn">Sign In</a>
+        <a href="contact.html#book" class="btn btn-primary btn-header">Book an Appointment</a>
+      </div>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <p class="section-label" style="color: rgba(255,255,255,0.9); margin-bottom: 8px;">Contact</p>
+        <h1 class="page-hero-title">Contact Us</h1>
+        <p class="page-hero-lead">Give us a call or drop by anytime. We endeavour to answer all enquiries within 24 hours on business days.</p>
+      </div>
+    </section>
+
+    <section class="section section-contact section-alt" id="contact-info">
+      <div class="container">
+        <p class="section-label animate-in">Contact Info</p>
+        <h2 class="section-title animate-in">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-card animate-in">
+            <h3>Find us</h3>
+            <p>1780 Maple St., Suite # 17<br />Northfield, IL 60093</p>
+          </div>
+          <div class="contact-card animate-in">
+            <h3>Email us</h3>
+            <p><a href="mailto:info@premiumtaxaccounting.com">info@premiumtaxaccounting.com</a></p>
+          </div>
+          <div class="contact-card animate-in">
+            <h3>Phone</h3>
+            <p><a href="tel:+18475799625">+1-847-579-9625</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-help" id="book">
+      <div class="container">
+        <p class="section-label animate-in">Send a Message</p>
+        <h2 class="section-title animate-in">Send us a message</h2>
+        <p class="section-lead animate-in">Fill out the form below and we'll get back to you within 24 hours on business days.</p>
+        <div class="contact-form-wrap animate-in">
+          <div class="form-success" id="formSuccess">
+            <h3>Thank you!</h3>
+            <p>Your message has been sent. We'll be in touch soon.</p>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Full name <span style="color: var(--accent);">*</span></label>
+              <input type="text" id="contactName" name="name" required placeholder="John Smith" />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email <span style="color: var(--accent);">*</span></label>
+              <input type="email" id="contactEmail" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone</label>
+              <input type="tel" id="contactPhone" name="phone" placeholder="+1 847 579 9625" />
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject <span style="color: var(--accent);">*</span></label>
+              <select id="contactSubject" name="subject" required>
+                <option value="">Select...</option>
+                <option value="general">General enquiry</option>
+                <option value="tax">Tax planning</option>
+                <option value="boi">BOI reporting</option>
+                <option value="bookkeeping">Bookkeeping</option>
+                <option value="cfo">CFO services</option>
+                <option value="appointment">Book an appointment</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message <span style="color: var(--accent);">*</span></label>
+              <textarea id="contactMessage" name="message" required placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="contactSubmit">Send message</button>
+          </form>
+        </div>
+        <p class="section-lead" style="margin-top: 24px;">Prefer to reach out directly? Call <a href="tel:+18475799625">+1-847-579-9625</a> or email <a href="mailto:info@premiumtaxaccounting.com">info@premiumtaxaccounting.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/pta-logo.png" alt="Premium Tax Accounting" class="footer-logo" />
+        <p class="footer-tagline">Giving you the complete solutions to simplify your business and flourish it.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Tax Planning & Advisory</a></li>
+          <li><a href="services.html">CFO Services</a></li>
+          <li><a href="services.html">BOI Reporting</a></li>
+          <li><a href="services.html">Bookkeeping</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#book">Book an Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p><strong>Phone:</strong> <a href="tel:+18475799625">+1-847-579-9625</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@premiumtaxaccounting.com">info@premiumtaxaccounting.com</a></p>
+        <p><strong>Office:</strong> 1780 Maple St., Suite # 17, Northfield, IL 60093</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copyright">© <span id="footerYear"></span> Premium Tax Accounting. All Rights Reserved.</p>
+        <p class="footer-legal"><a href="#">Privacy Policy</a> · <a href="#">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact-form.js"></script>
+  <script>document.getElementById('footerYear') && (document.getElementById('footerYear').textContent = new Date().getFullYear());</script>
+</body>
+</html>
